@@ -1,0 +1,46 @@
+{%extends "layout.html"%}
+  
+{%block body%}
+<div class="container">
+  <form class="form-signin" method="post" action="/process">
+    <h2 class="form-signin-heading">Please Complete Info</h2>
+    <div class="form-group">
+      <label for="fn" class="sr-only">First Name</label>
+      <input type="text" id="fn" name="firstName" class="form-control" placeholder="John" required autofocus>
+
+      <label for="ln" class="sr-only">Last Name</label>
+      <input type="text" id="ln" name="lastName" class="form-control" placeholder="Doe" required autofocus>
+
+      <label for="mi" class="sr-only">Middle Initial</label>
+      <input type="text" id="mi" name="middleInitial" class="form-control" placeholder="J." required autofocus>
+
+      <label for="age" class="sr-only">Age</label>
+      <input type="text" id="age" name="age" class="form-control" placeholder="50" required autofocus>
+      <!--
+      <label for="inputLoc" class="sr-only">Sex</label>
+      <input type="text" id="inputLoc" name="sex" class="form-control" placeholder="M/F" required autofocus>-->
+      
+      <div class="form-group">
+        <label for="sex">Example select</label>
+        <select name="sex" class="form-control" id="sex" required autofocus>
+          <option>M</option>
+          <option>F</option>
+        </select>
+      </div>
+      
+      <label for="inputLoc" class="sr-only">Address</label>
+      <input type="text" id="inputLoc" name="address" class="form-control" placeholder="Address" required autofocus>
+
+      <div class="form-group">
+      <label for="comment" class="sr-only">Comment:</label>
+        <textarea class="form-control" name="comment" rows="5" id="comment" placeholder="Comment" required></textarea>
+      </div>
+
+      <label for="inputExp" class="sr-only">Expiration</label>
+      <input type="address" id="inputExp" name="expiration" class="form-control" placeholder="Expiration" required autofocus>
+    </div>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  </form>
+</div> <!-- /container -->
+{%endblock%}

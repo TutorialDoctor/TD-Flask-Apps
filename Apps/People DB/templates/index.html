@@ -1,0 +1,16 @@
+{%extends "layout.html"%}
+
+{%block body%}
+<div style="padding-top:2%"class="container">
+  <h1>{{hello}}</h1><br/>
+  <a class="btn btn-primary" href="{{ url_for('create') }}">Create A Person</a><br/><br/>
+
+{%for person in people%}
+  <div>
+  <h2>{{person.firstName}} {{person.middleInitial}}. {{person.lastName}}</h2>
+  {{person.age}}
+  {{person.sex}}
+  </div></br>
+{%endfor%}
+</div>
+{%endblock%}
