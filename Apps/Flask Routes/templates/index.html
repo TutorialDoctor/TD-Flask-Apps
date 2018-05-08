@@ -1,0 +1,10 @@
+<h1>Hello</h1>
+<a href="{{url_for('new')}}">New Person</a><br><br>
+
+{%for person in people%}
+<div>
+  <label>{{person.name}}</label><br>
+  <a href="{{url_for('show',id=person.id)}}">Show</a>
+  <a href="{{url_for('edit',id=person.id)}}">Edit</a>
+</div>
+{%endfor%}
