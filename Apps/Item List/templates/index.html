@@ -1,0 +1,14 @@
+<h1>Items</h1>
+<div>
+  <form method="post" action="/new">
+    <label for="name">New Item</label><br>
+    <input type="text" id="name" name="name" placeholder="Shoes" required autofocus>
+  </form>
+</div>
+
+{%for item in all%}
+  {{item.name}}<br/>
+{%endfor%}
+
+
+
