@@ -1,0 +1,29 @@
+{% extends 'layout.html'%}
+
+{%block content%}
+
+<!--
+<div class="container">
+  <div style="width:100%; text-align: center" class="alert alert-success" role="alert">
+    {{get_flashed_messages()[0]}}
+  </div>
+</div>-->
+
+  <div class="container" style="width:25%">
+    <form action='/submit' method='POST'>
+      <label for="nme">Name</label>
+      <input class="form-control" type='text' name='name' id="nme" placeholder="Henry P. Jenkins"><br>
+      <label for="age">Age</label>
+      <input class="form-control" type='text' name='age' id="age" placeholder="35"><br>
+      <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+    </form><br/>
+  </div>
+
+  <div class="container">
+    <h2>People that exist:</h2>
+    {%for person in people%}
+      {{person.name}}
+      {{person.age}}: <b>id is {{person.id}}</b><br/>
+    {%endfor%}
+  </div>
+{%endblock%}
