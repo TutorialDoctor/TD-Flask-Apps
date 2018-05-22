@@ -1,0 +1,49 @@
+{% extends 'layout.html'%}
+
+{%block content%}
+
+<div class="container" style="width:25%">
+  <form action='/submit' method='POST'>
+    <label for="msg">Message</label>
+    <input class="form-control" type='text' name='msg' id="msg" placeholder="Hello"><br>
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+  </form><br/>
+</div>
+
+
+<div class="container" style="padding-bottom:128px">
+  
+  <b>Message recieved:</b> "{{msg}}"<br><br>
+  
+    <table style="width:100%">
+      <tr>
+        <th>Commands</th>
+        <th>Function</th> 
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>get the AI's name</td> 
+        <td>ex: My name is Rachel</td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>get the current date</td> 
+        <td>ex: It is Tuesday May 22, 2018</td>
+      </tr>
+      <tr>
+        <td>birth</td>
+        <td>get the AI's birth date</td> 
+        <td>ex: I was born on Tuesday, May 22 2018 </td>
+      </tr>
+      <tr>
+        <td>state</td>
+        <td>get the AI's emotional state</td> 
+        <td>ex: I am fine. </td>
+      </tr>
+    </table>
+</div>
+{%endblock%}
+
+<!--
+<input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />-->
