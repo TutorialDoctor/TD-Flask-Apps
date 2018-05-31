@@ -1,0 +1,25 @@
+{%extends 'structure.html'%}
+
+{%block content%}
+Last Item: {{new_item}}<br><br>
+
+<b>List Database: </b>{{items}}<br><br>
+
+<div>
+<form action="/add" method="post">
+  <label id="lbl" for="in">New Item</label>
+  <input id="in" type="text" name="in" autofocus>
+  <input type="submit" value="Add" class="btn btn-primary">
+</form>
+</div>
+
+<br><br>
+   
+<div>
+<form method="POST" action="/delete" style="display: inline">
+  <label id="lbl" for="in">Remove Item</label>
+  <input id="in" type="text" name="in">
+  <input type="submit" value="Delete" class="btn btn-primary">
+</form>
+</div>
+{%endblock%}
