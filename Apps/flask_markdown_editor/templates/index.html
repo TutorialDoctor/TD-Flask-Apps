@@ -1,0 +1,21 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+
+<h2>Simple Markdown Editor</h2>
+<a href="https://github.com/sparksuite/simplemde-markdown-editor">Github Project</a><br><br>
+<textarea id="MyID"></textarea>
+
+<script>
+  var simplemde = new SimpleMDE(
+    {
+    element: document.getElementById("MyID"),
+    toolbar: ['bold','italic','table','link','preview']
+    });
+  
+  simplemde.value({{exports|tojson}});
+</script>
+
+
+{%endblock%}
+

@@ -1,0 +1,618 @@
+# Computer Programming: Made Actually Easy
+
+For the examples below I will be using the **Python** programming language.
+I more than highly recommend downloading the [Pythonista](https://itunes.apple.com/us/app/pythonista-3/id1085978097?mt=8) (**$9.99**) app for the iPad/iPhone to follow along with this document.
+
+A computer **program** is a **recipe for a computer**. It looks something like below (don't let it scare you):
+
+### Ex.1
+
+	class Robot():
+		Robot().ID = 18118
+		def __init__(self,name)
+		self.name = name
+		self.age = 0
+		def skill1(self):
+			print("I can backflip")
+	
+	male_droid = Robot("Patrick")
+	female_droid = Robot("Alexia")
+	
+
+The computer reads the recipe and you get a game like **Angry Birds**, computer software like **Microsoft Office**, or a website like **Youtube**.
+
+# USER
+A person who uses a program is called a **user**.
+
+# DEVELOPER
+A person who creates a program is called a **developer**.
+
+# IDE
+
+If you want to write a computer program, you need something to write it in.  You use a word processor to write essays, and you write programs in an IDE (**Integrated Development Environment**).
+
+It is an environment  that you develop in! Develop what? Develop programs -- those super tasty code recipe masterpieces! **XCODE** is Apple's IDE. You make iPhone apps in XCODE and Android apps in **Eclipse**. **Pythonista** is an IDE for Python on the iPad. Other iPad IDEs are **Codea** and **Swift Playgrounds**.
+
+# VARIABLES
+Recipes have various ingredients. The ingredients of a computer program are called **variables**.
+
+Variables can be named like **nouns**. Your recipe might require an *apple* and some *sugar* and a *blender*. These would be variables in your program.
+
+When you create a variable it is called **declaring** the variable. Whenever you declare a variable you are naming to a spot in the computer's brain/memory.
+
+### Ex. 2
+
+	apple = "a ruddy and delicious fruit"
+	sugar = "a natural sweet substance"
+	blender = "a machine that grinds what you put into it"
+	age = 24
+	height = 6.5
+
+***TAKE ACTION***: Find the variables in **Ex.1**?
+
+# STATEMENTS
+The **directions/instructions** of a computer program are called **statements**.
+
+The most famous statement in Python is the `print()` statement. This statement tells the computer to **print something** to the screen. The `input()` statement tells the computer to **get input** from the user. Combining these two statements, you can print the input of the user. Most programming languages have similar statements to the `print()` and `input()` statements.
+
+### Ex. 3
+
+	print("Hello there")
+	input("Please enter your age: ")
+	print(input("Please enter your name: "))
+
+***TAKE ACTION***: Type the code above inside of Pythonista and press the run button to see what happens! 
+
+# FUNCTION
+
+A **function** is a **group of statements**. Some people see them as machines, because functions can take something in, **do a series of operations** on it, and output the result. They are usually named like **verbs**.
+
+For instance, if I put a `strawberry` variable into a `blend()` function, the `blend()` function would take in the strawberry and could return a strawberry smoothie. So I could type `blend()` and the computer would do its thing. Yummy!
+
+Let's see an example:
+
+### Ex. 4
+
+	# VARIABLES
+	
+	strawberry = "A strawberry"
+	
+	# FUNCTIONS
+	
+	def blend(strawberry):
+		print("Blending")
+	
+	blend()
+
+In **Ex.4** we created a variable named `strawberry`, we created a function named `blend()`, and we ran the function just like we did the `print()` statement. If you haven't guessed already, the print statement is a function! In Python, `def` means *define a function*.
+
+When you create a function it is called **defining** the function. When you run a function it is called **calling** the function (the parenthesis next to the function look like a mouth). The action of putting something into the mouth of the function is called **passing** something to the function.
+
+In computer programming, the things you **insert** into the mouth (parenthesis) of a function are called **arguments/parameters**. They work just like the arguments in Algebra:
+
+### Ex.5
+
+	f(x) = 2x + 1
+	f(1) = 2*1 + 1
+	f(2) = 2*2 + 1
+
+In **Ex.5** above, the `x` would be inserted wherever there is an x in the formula. If `x` is 1, this function would output 3. If `x` is 2, this function would output 5. 
+
+> An argument is the actual value that is passed to the function (as input) ,when it is called. However parameters are the variables that are used **in** the function declaration/definition to represent those arguments that were send to the function during the function call.
+
+### Ex. 6
+
+	# VARIABLES
+	
+	stove_temperature = 85
+	room_temperature = 75
+	
+	# FUNCTIONS
+	
+	def get_temperature(x):
+		print(x)
+	
+	get_temperature(stove_temperature)
+	get_temperature(room_temperature)
+
+In **Ex.6** above we declare two variables `stove_temperature` and `room_temperature` and define one function named `get_temperature()` which simply prints whatever argument is passed into it. The `get_temperature()` function is called twice with `stove_temperature` passed into the first call and `room_temperature` passed into the second call. Gotta use those keywords!
+
+## Video Game & App Development
+
+Let's say you wanted to make a game. First you would create all of your characters and game objects as variables. Next you would create some functions for your characters and game objects.
+
+You might create a variable named `maria`. You might create a function called `jump()`, so that when you type `jump()`, an animation would play and start moving the character in the up direction.
+
+Or, you might create a function called `run()` which would move the character to the left or right while playing an animation.
+
+Perhaps Apple inc. uses functions named `shutdown()` and `startup()` and -`openAppStore()` in their coding of IOS.
+
+# FLOW CONTROL
+
+A recipe isn't simply a list of directions, but a list of directions performed under certain conditions.
+
+**For example:**
+
+You tell the computer to bake the cake, then you tell it to stop baking, then you tell it to take the cake out of the oven, then you tell it to let the cake cook. Finally you tell it to eat the cake..
+
+However, how long is it supposed to bake? How can you tell when it is ready? How long to let it cool? What temperature should it be when it is cool? 
+
+Your recipe has to have a flow. It has to have **control flow** or **flow control**.
+
+# CONDITIONAL STATEMENTS
+
+The way you **create flow** in computer programming is by using **conditional statements**.
+
+A conditional statement is a statement like:
+
+*"If the temperature is 100 degrees, take the cake out of the oven." Otherwise, if it is 90 degrees, leave it in the oven. If it is anything else..."*
+
+The way you say **if** in computer programming is with the "if" keyword. the way you say *otherwise* is **else if**." The way you say *if anything else* is **else**.
+
+Here is an example program in the Python language that actually works. `temperature` is the variable:
+
+### Ex.7
+
+	temperature = 0
+		
+	def BakeCake():
+		print("Baking the cake Sire...")
+	
+	def TakeCakeOutOfOven():
+		print("Taking the cake out of the oven Sire...")
+		
+	def LeaveCakeInOven():
+		print("Leaving the cake in the oven Sire...")
+		
+	def EatTheCake():
+		print("Eating his delicious scrumptious cake...")
+	
+	def BarkLikeAStarvingDog():
+		print("WOOF! WOOF! WOOF!!")
+	
+	if (temperature==100):
+		TakeCakeOutofOven()
+		
+	elif (temperature==90):
+		LeaveCakeInOven()
+	
+	else:
+		BarkLikeAStarvingDog()
+		
+	input("Press Enter to leave this terrible place...")
+
+Python writes `else if` as `elif`.
+
+# LOOPS
+
+A **loop** is how you make a computer **repeat** an instruction. You could make it repeat a whole function or just a single statement.
+
+There are two main types of loop statements. There is the **while loop** and the **for loop**.
+
+## While Loop
+
+A while loop is like saying, "**As long as**..." Short for "as long is" is *while.*
+
+If you have a temperature variable, temperature can change. You might say, "While the temperature is 90 degrees, keep the cake in the oven." As long as the temperature is 90 we will keep it in the oven.
+
+### Ex. 8
+
+	temperature = 0
+	
+	while temperature<4:
+		print("Temperature is less than four")
+		temperature = temperature + 1
+		
+
+If we never increment temperature, temperature would remain what it currently is. This is why we set the temperature equal to whatever the temperature currently is plus 1. Once the temperature is 4 or greater, the computer will stop printing "Temperature is less than four." This loop will repeat "as long as" the temperature is less than 4.
+
+## For Loop
+
+A for loop is like saying, "**Until**..." The computer will do something until something else happens. If we have a cake variable and a temperature variable, we could `bake()` the cake until the temperature is 100 degrees. Once the cake is 100 degrees, we stop baking it.
+
+### Ex. 9
+
+	for temperature in range(1,10):
+		print("name")
+
+"For" loops in python are a bit different than most programming languages but are a lot easier to read. This For loop above print's name for every number in the range 1 to 10. So until temperature is 10, this loop will print "name."
+ 
+# DATA TYPES
+
+An apple is a type of fruit. A pecan is  type of nut. A male is a type of person. When you give a **variable** a **type** in computer programming, you are giving it a **data type**.
+
+The basic types of variables in a computer program are the:
+
+- character
+- string
+- integer
+- float
+- boolean
+- array
+- dictionary
+
+## Character
+
+A **character** is a **single letter number symbol**. Characters are written in quotes. A space within the quotes counts as a character too!
+
+- "a"
+- "7"
+- "@"
+
+## String
+
+A string is a string of characters. Strings are like **words** in English.
+
+Strings are usually put in double or single quotes:
+
+- "This is a string"
+- 'This is a string also'
+- "I don't know if this string works."
+
+The spaces between words count as a character too!
+
+## Integer
+
+An **Integer** is a **number**. Numbers don't go in quotes.
+
+- 1
+- 345
+- 9043
+
+## Float
+
+A **Float** is a number also, but it is a **number with decimals**. Floats don't go in quotes (that rhymes).
+
+- 1.5
+- 345.67
+- 1924.034
+
+## Boolean
+
+A Boolean is like a **switch**. You can turn a variable ON or you can turn a variable OFF. ON = TRUE in computer programming. OFF = FALSE. If you had a variable named *switch*, you could turn it OFF/FALSE.
+
+The on/off switches in your settings make use of Boolean variables, I would suppose.
+
+- light_on = True
+- door_open = False
+
+A **Boolean Expression** is an expression whose result is either true or false:
+
+	1<3
+	3==4
+	8>=8
+
+- `<` means **less than**
+- `>` means **greater than**
+- `==` means **is equal to**
+- `!` means **is not**
+- `!=` means **not equal**
+- `<=`` means **less than or equal to**
+- `>=` means **greater than or equal to**
+
+## Array/List
+
+An **array** is a **list** of items. If you had a variable called `typesOfFruit`, inside of it you could put an array of fruit. An array is a variable that can contain other variables or data types.
+
+### Ex.10
+
+	typesOfFruit = ["apple","orange","banana"]
+
+To retrieve an item from the list, type the name of the variable and the item's **index**. The index of `apple` is 0, `orange` is 1, `banana` is 2.
+
+	print(typesOfFruit[2])
+
+This prints `banana`.
+
+## Dictionary/Associative Array
+
+A **dictionary** is an **array** that pairs each **variable with a key**. The only way you can access each variable is by using the appropriate key. They can be used to store properties of values.
+
+### Ex.11 
+
+	words = {"word":"definition1","word2":"definition 2"}
+	print(words["word"])
+	
+	age = {"joe":23,"sam":45}
+	print(age[joe"])
+
+- Ouptut: `definition1`
+- Output: `23`
+
+# Data Types Code Example
+
+### Ex.12
+
+	# Character
+	
+	middle_initial = "J"
+	
+	# String
+	
+	first_name = "Raphael"
+	last_name - "Smith"
+	
+	# Integer
+	
+	age = 29
+	
+	# Float
+	
+	height = 6.3
+	
+	# Array
+	
+	hobby = ['Art','Science','Programming','Game Development']
+	
+	# Dictionary
+	
+	definition = {
+		'Program': A recipe for a computer',
+		'Variables':'The ingredients of a computer program',
+		'Statements':'The instructions of a computer program'
+		'Function':'A group of statements'
+	
+	# Tuple
+	
+	location = (47.6,122.33) #Seattle Washington N/W
+	
+	# Boolean
+	
+	cool = True
+	print(age<6)
+	print(first_name=="Raphael")
+	
+
+# CONCATENATION
+
+Concatenate means to **join**. You can join two strings with the +(plus) sign. 
+
+### Ex. 13
+
+	first_name = "Tutorial"
+	last_name = "Doctor"
+	full_name = first_name+last_name			
+
+Since a space is a character too, you would have to type a space into one of the strings above or concatenate these with a space:
+
+### Ex.14
+
+	full_name = first_name + " " + last_name
+
+# CLASSES
+
+What if you wanted to make your own data types? **Custom data types** are made using classes. Classes are used to classify variables.
+
+Classes allow you to give your variables **characteristics**. For example, all humans share certain characteristics. So, you could create a human class and put some male and female variables in it.
+
+You can also create some functions for your human class like, `walk()`, `run()`, `speak()`, `think()`, etc.
+
+	class Human():
+		male = "o->"
+		female = "o+"
+		
+		def walk():
+			None
+		def run():
+			None
+		def speak():
+			None
+		def think():
+			None
+
+# SUPERCLASSES AND SUBCLASSES
+
+Sometimes classes can be part of other classes
+
+	- HumanClasss
+		- Female Class
+			- Woman Class
+
+A woman is part of the female class, and a female is part of the human class. If I had an object named *Sarah*, she would be a part of the woman class and inherit traits from the female and human classes.
+
+The female is the superclass of the woman class, and the woman class is the subclass of the female class.
+
+	- FruitClass
+		- AppleClass
+			- GrannySmithClass
+
+An apple is a type of fruit. A Grannysmith is a type of apple. Classes should be named like types of things. An apple is a type of fruit, so it would be in a fruit class. Another way to name a class is as a subject. In math class you learn math. 
+
+***TAKE ACTION***: The superclass of the apple class is? The subclass of the fruit class is?
+
+# METHOD
+
+A **function** that is **in a class** is called a method.
+
+Methods in a math class might be `add()`, `subtract()`, `divide()`, and `multiply()`. Of course, you would have integer and float variables in it.
+
+# OBJECT
+
+Once you have given a variable characteristics it then becomes an object. An object is called an **instance** of a class because it is but one occurrence of the class and contains all of the properties or characteristics of the class.
+
+So you create a variable and assign it to the `Human()` class. Now your human variable(object) can either `walk()`, `talk()`, `speak()`, or `think()` when you want it to.
+
+### Ex.15
+
+	 man = Human()
+	 man.speak()
+
+Now your human variable can do the `speak()` method!
+
+Programing that uses objects is called **Object Oriented Programming** (OOP).
+
+### Ex.16
+
+	class Human():
+		age = 24
+		def run():
+			print("running")
+	
+	joe = Human()
+	print(joe.age)
+	joe.run()
+
+# Instance/Member Variable
+
+A **variable** defined **inside of a class** is called an **instance variable**. Also called a **member variable**
+
+An apple is part of the fruit class, in which there are variables like taste, color, type etc. Taste, color, and type are instance variables. They are variables that belong to the fruit class.
+
+# MODULES/LIBRARIES
+
+Why bake bread from scratch when you can buy a loaf? **Collections of classes, functions and variables** made by other people that you can use in your own program recipe are called modules/libraries.
+
+# Terms and Keywords
+
+## INTERACTIVITY
+
+Interactivity is a way for **users** like you and me to **interact with** and change the code of a **program** without having to open the code in an IDE and change variables or functions.
+
+For example, when you select a number in the timer section of the clock app on your iPhone, you are actually changing the value of a variable in the code. Let's say the name of that variable is *timer*.
+
+When you tap the "Start" button, you are starting a function (remember that functions do something to variables). If I had to guess, the start function counts down from the timer number.
+
+All you had to do was scroll and tap to manipulate the code. You *interacted* with the program.
+
+## EVENTS, EVENT LISTENERS, EVENT HANDLERS
+
+When you **press a key** on your keyboard, that is an event. When you **click a button** on your mouse or **swipe or pinch** on your iPad, that is an **event**.
+
+The **event listener** is a function that **detects the event**, and the **event handler** is a function that  **links that event** to a function or class in your program.
+
+Events are what connect our physical actions to the digital actions of the computer, making it interactive.
+
+## DEBUGGING
+
+Say that you finish your game or app and run it, and nothing works! That means that somewhere, there is a mistake in your code. The process of **correcting errors** in your code is called **debugging**.
+
+## SOURCE CODE
+
+In computer programming, your **entire recipe** with its ingredients and instructions is called your **source code**.
+
+A lot of programmers keep their source code a secret, like a secret recipe. Programs that are not secret are called **Open Source** programs.
+
+## SYNTAX
+
+There are different types of languages you can write in, and each language has its own grammar rules. The **grammar rules** of computer programming is called the **syntax** of the language.
+
+If your syntax is not correct, the computer will not understand what you are saying. In some languages they use a semicolon to end a statement, just like we use a period to end a sentence. Different syntax.
+
+## PROGRAMMING STYLE
+
+Your programming style is the way in which the developer **styles their source code**, usually according to a set of rules or standards.
+
+Just as there are various styles for writing poems , there are different styles to writing programs. 
+
+Some rules a style might follow are:
+
+- Indent all function code
+- capitalize the first letter in a function name
+- white-space between statements.
+
+By default, the Python programming language forces you to indent function code  (for style purposes). Styles are sometimes chosen for readability (by other developers).
+
+## ALGORITHMS
+
+When people write recipes, there is a **certain order** in which you are supposed to cook or prepare the food or supplies. In computer programming, it is called an **algorithm**.
+
+For instance, you might tell the computer to gather all of the supplies first, and then you tell it to do stuff with those supplies. One main reason games or apps lag is because they have bad algorithms.
+
+For example, I might tell the computer to Cut() and Butter() the bread after I tell it to Eat() the bread. The computer cannot cut and butter bread that it has already eaten, so you get an **error**.
+
+Although a bad algorithm might not give you an error, it could take too much time, when there is an easier way. 
+
+I once saw a computer program that was a page long, and all it did was make an object follow the mouse cursor. I did the same thing with one line of code, and it was faster!
+
+## MEMORY
+
+Computers, much like humans, can only remember so much at one time. Anything stored in the memory of the computer can be accessed quicker than something that isn't.
+
+Most data/directions go into the **RAM** (Random Access Memory) part of the computer brain. Another place information is stored is in the **ROM** (Read-only memory). I am no neurosurgeon so I will stop there. All you need to know is that you shouldn't overload the computer with instructions when it can only remember so much.
+
+I wrote a program that made my computer calculate the current Year, Month, Day, Hour, Minute, and Second 20,000 times fast. My computer fan started humming
+
+## API (Application Programming Interface)
+
+An **API** is a bunch of **access points** that allow your own program to **communicate with another program**, without having direct access to their secret recipe.
+
+In other words, if you want to make your own twitter app that can post to twitter, you have to use Twitter's API. Twitter has to give you a **key** to access certain parts of their API.
+
+An API is a bunch of custom variables and functions that make up Twitter. Twitter allows you to use them to program for their program.
+
+This keeps people from stealing the secret Twitter recipe of from hacking Twitter.
+
+http://markdownshare.com/view/eb975811-188e-4a9f-ab34-7a231dbfb4ee
+http://markdownshare.com/edit/aa620e66af991c60371fe1b6c9e3a264
+http://markdownshare.com/delete/aa620e66af991c60371fe1b6c9e3a264
+
+## COMPILE
+After you write your program you have to translate it back into something the computer actually understands (into machine language). This process is called **compiling**. A **compiler** is a program that compiles programs.
+
+## EXECUTE
+When you finally run your program, the computer executes it. In other words the instructions in the recipe are carried out by the computer.
+
+## PROGRAMMING LANGUAGES
+
+### HIGH-LEVEL LANGUAGES
+The easier the language you program in is to understand by humans, the higher its level is (most of the time).
+A programming language like LUA is a high-level language. They say it is more "**human-readable**". 
+
+### LOW-LEVEL LANGUAGES
+Computers cannot understand high-level programming languages. Computers understand what is called "**machine language**." Machine language is the lowest level language. **Assembly** is the second lowest low-level programming language.
+Assembly is the middleman language between machine code and human-readable code.
+
+### COMPILED LANGUAGES
+A compiled programming language is a program that gets compiled (into machine language) and thereafter, read by the computer.
+
+- C
+- C++
+- BASIC
+- Lisp
+- Objective C
+- Pascal
+- COBOL
+
+### INTERPRETED LANGUAGES
+An interpreted programming language is one that is not translated, but interpreted, by means of an **interpreter**. The interpreter executes the program directly, without having to translate it to machine code.
+
+- Java
+- Python
+- Ruby
+
+# Additional Info
+
+## Operating System
+
+-  An **Operating System** is a **big program** that **runs other programs** like:
+	-  Windows
+	-  Mac OSx 
+	-  Linux
+- There are even mobile operating systems:
+	- IOS
+	- Android
+	- Windows RT
+	
+## Virus
+
+-  A **Virus** is a **program that corrupts** other programs.
+
+## Hacker
+-  A **Hacker** is a **person** who **uses unconventional means** to access something. 
+- There are three types of hackers
+	- White Hat hackers
+	- Grey Hat a hackers
+	- Black Hat hackers
+
+## Pseudocode
+
+- Pseudocode(false/fake) code is the steps of a program written in plain English. No syntax is required. It's more of an outline/rough draft.
+
+## Fork
+
+- A fork is when a person modifies your secret recipe(source-code), making it distinctly different) and creates a separate program. This usually creates a schism between users. 
+- Forks usually happen when users or developers 
+
+Email me if you want to know more:
+
+Thetutorialdoctor@gmail.com 
