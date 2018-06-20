@@ -10,7 +10,7 @@ animals = [{'name' : 'Ellie', 'type' : 'Elephant'},
 
 @app.route('/')
 def index():
-	return '<h1>Animals</h1>'
+	return "<h1>Animals</h1><br><a href='/animal'>See Animals</a>"
   
 @app.route('/animal')
 def getAll():
