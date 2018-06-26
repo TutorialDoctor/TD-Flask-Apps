@@ -1,0 +1,21 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+  <h1>Food Categories</h1><hr/>
+  <div id="colorful">
+    <h1>
+    <span style="color:red">C</span>
+    <span style="color:blue">o</span>
+    <span style="color:green">l</span>
+    <span style="color:plum">o</span>
+    <span style="color:#e5e543">r</span>
+    <span style="color:red">f</span>
+    <span style="color:orangered">u</span>
+    <span style="color:#4c75b5">l</span></h1>
+  </div>
+  <div id="empty"></div>
+  <br>
+  <script src="{{url_for('static',filename='script.js')}}" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+{%endblock%}

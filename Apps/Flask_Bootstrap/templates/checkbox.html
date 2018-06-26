@@ -1,0 +1,14 @@
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label id="checklabel" class="form-check-label" for="defaultCheck1">
+    Default checkbox
+  </label>
+</div>
+
+<script>
+  document.getElementById('defaultCheck1').addEventListener('click',notice)
+  document.getElementById('checklabel')
+  function notice(){
+    checklabel.innerHTML=this.checked
+  }
+</script>

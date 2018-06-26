@@ -1,0 +1,25 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+{%include 'button.html'%}
+{%include 'checkbox.html'%}
+{%include 'list.html'%}
+{%include 'pagination.html'%}
+{%include 'breadcrumb.html'%}
+{%include 'progress.html'%}
+{%include 'card.html'%}
+{%include 'button_group.html'%}
+{%include 'carousel.html'%}
+{%include 'form.html'%}
+{%include 'tooltip.html'%}
+{%include 'input_group.html'%}
+{%include 'user_input.html'%}
+{%include 'image.html'%}
+{%include 'slider.html'%}
+{%include 'info_form.html'%}
+{%include 'button_toolbar.html'%}
+
+  <script src="{{url_for('static',filename='script.js')}}" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+{%endblock%}
