@@ -1,0 +1,60 @@
+{%extends "layout.html"%}
+
+{%block body%}
+<div class="container">
+  <form class="form-signin" method="post" action="/process">
+    <h2 class="form-signin-heading">Please Complete Info</h2>
+      <div class="form-group">
+      <label for="nm" class="sr-only">Trainee Name</label>
+        <input type="text" id="nm" name="name" class="form-control" aria-label="1" placeholder="Trainee Name" required autofocus></div><br>
+      
+      <div class="form-group">
+      <label for="wt" class="sr-only">Weight</label>
+        <input type="text" id="wt" name="weight" class="form-control" aria-label="1" placeholder="120lbs" required autofocus></div><br>
+      
+      <label for="ht" class="sr-only">Height</label>
+      <input type="text" id="ht" name="height" class="form-control" aria-label="1" placeholder="6'2" required autofocus><br>
+      
+      <label for="ag" class="sr-only">Age</label>
+      <input type="text" id="ag" name="age" class="form-control" placeholder="24" required autofocus><br>
+      
+      <div class="form-group">
+        <label for="gd">Gender</label>
+        <select name="gender" class="form-control" id="gd" required autofocus>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="st">State</label>
+        <select name="state" class="form-control" id="st" required autofocus>
+          <option>GA</option>
+          <option>FL</option>
+          <option>CA</option>
+        </select>
+      </div>
+      
+    <div class="form-group">
+        <label for="trn">Trainer</label>
+        <select name="trainer" class="form-control" id="trn" required autofocus>
+          <option>Raphael</option>
+          <option>Kamira</option>
+          <option>Chris</option>
+          <option>Joseph</option>
+          <option>Henry</option>
+          <option>Jessica</option>
+          <option>Alexandro</option>
+          <option>Greg</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+      <label for="comm" class="sr-only">Comment:</label>
+        <textarea class="form-control" name="comment" rows="5" id="comm" placeholder="Comment" required></textarea>
+    </div>
+
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+  </form> <!-- /container -->
+{%endblock%}

@@ -1,0 +1,21 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<div class="container" style="padding-top: 36px">
+  
+  <a style="margin-bottom: 16px" href="/new" class="btn btn-primary">New Plan</a>
+  
+  {% for r in result %}
+  <div>
+      <div class="page-header">
+        <h3>{{ r.name }}</h3>
+      </div>
+      <div class="well">
+        <p>Weight: {{ r.weight }} <b> | </b>  Height: {{r.height}}<b> | </b>Trainer: {{r.trainer.name}}</p>
+        {{r.date.strftime("%B %d, %Y %-I:%M%p")}}
+      </div>
+  </div>
+<hr style="height:8px;border:none;color:#333;background-color:#6a9adb;">
+  {% endfor %}
+</div>
+{%endblock%}
