@@ -1,0 +1,12 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<body>
+<h2>Files</h2>
+{% for file in files %}
+  <ul id="list" class="list-group">
+    <li class="list-group-item"><a href="{{ file }}">{{ file }}</a></li>
+  </ul>
+{% endfor %}
+  {%endblock%}
+</body>

@@ -1,0 +1,21 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<h3>Code:</h3>
+
+<script src="{{url_for('static',filename='script.js')}}" type="text/javascript"></script>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+<textarea id="MyID"></textarea>
+
+<script>
+  var simplemde = new SimpleMDE(
+    {
+    element: document.getElementById("MyID"),
+    toolbar: ['bold','italic','strikethrough','|','table','link','side-by-side','guide','clean-block','quote','code','|','heading','heading-1','heading-2','heading-3','heading-smaller','heading-bigger','unordered-list','ordered-list','|','horizontal-rule','preview','fullscreen']
+    });
+  
+  simplemde.value({{content|tojson}});
+</script>
+
+{%endblock%}
