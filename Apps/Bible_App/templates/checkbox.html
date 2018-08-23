@@ -1,0 +1,24 @@
+<h1 id="heading">This is unchecked</h1>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label id="checklabel" class="form-check-label" for="defaultCheck1">
+    false
+  </label>
+</div>
+
+<script>
+  var heading = document.getElementById('heading')
+  var check = document.getElementById('defaultCheck1')
+  check.addEventListener('click',notice)
+  var check_label = document.getElementById('checklabel')
+  function notice(){
+    checklabel.innerHTML=this.checked
+    if(this.checked){
+      heading.innerHTML = "You've checked it!";
+    }
+    else if(this.checked == false){
+      heading.innerHTML = "Unchecked!"
+    }
+  }
+</script>

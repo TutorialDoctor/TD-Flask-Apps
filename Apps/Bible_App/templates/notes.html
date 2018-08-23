@@ -1,0 +1,25 @@
+<div class="input-group pane">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Notes</span>
+  </div>
+  <textarea id="notes" class="form-control" aria-label="With textarea" rows="24" cols="30">
+</textarea>
+</div>
+
+<script>
+  var notes = document.getElementById('notes');
+  var scriptures = document.getElementById('scriptures');
+  var book_title = document.getElementById('book-title');
+  notes.addEventListener('mouseover', change);
+  notes.addEventListener('mouseout', unchange);
+  //scriptures.addEventListener('click', change);
+
+  function change(){
+    this.innerHTML = book_title.innerHTML +"\n"+ scriptures.innerHTML
+  }
+  
+  function unchange(){
+    this.innerHTML = ""
+  }
+</script>
+

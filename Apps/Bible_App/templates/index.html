@@ -1,0 +1,28 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<div class="container">
+  {%include 'checkbox.html'%}
+  <br>
+
+  {%include 'button_group_justified.html'%}
+  <br><br>
+  <h2 id="book-title" align="middle">Genesis 1</h2>
+  {%include 'pagination.html'%}
+  <div class="row">
+    <div class="col-*-*">{%include 'textarea.html'%}</div>
+    <div class="col-*-*">{%include 'notes.html'%}</div>
+  </div>
+  <br>
+</div>
+
+<script src="{{url_for('static',filename='script.js')}}" type="text/javascript"></script>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+<style>
+.pane{
+    padding:8px
+  }
+</style>
+
+{%endblock%}
