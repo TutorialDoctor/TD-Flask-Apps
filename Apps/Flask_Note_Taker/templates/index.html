@@ -1,0 +1,10 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+{%include 'components/starter.html'%}
+{%include 'components/notes.html'%}
+
+<script src="{{url_for('static',filename='script.js')}}" type="text/javascript"></script>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+{%endblock%}

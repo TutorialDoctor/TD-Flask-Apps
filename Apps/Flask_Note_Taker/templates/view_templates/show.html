@@ -1,0 +1,13 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<div class="container">
+  <h1>Note Added!</h1>
+  <div style="font-family: sans-serif">
+    <span><b>Title:</b> {{title}}</span>
+  <br>
+    <b>Text: </b> <pre style="font-family: sans-serif !important">{{text}}</pre><br>
+  </div>
+  <a class="btn btn-primary" href="/">New Note</a>
+</div>
+{%endblock%}
