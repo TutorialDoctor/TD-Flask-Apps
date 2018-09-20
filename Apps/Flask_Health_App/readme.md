@@ -1,6 +1,6 @@
 A flask app to help me get more healthy. Based on my research.
 
-First do:
+First, do:
 
 <pre>
 python3
