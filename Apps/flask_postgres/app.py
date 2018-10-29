@@ -32,7 +32,8 @@ class User(db.Model):
 
 @app.route('/')
 def index(): 
-  return render_template('index.html')
+  user = User.query.all()
+  return render_template('index.html',user=user)
 
 @app.route('/prereg', methods=['POST'])
 def prereg():
