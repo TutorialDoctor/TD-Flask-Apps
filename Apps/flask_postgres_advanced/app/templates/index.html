@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+    
+<body>
+
+    <main role="main" class="container">
+        <div class="starter-template">
+            <p>This is a most basic <b>Flask</b> program with a <b>PostgreSQL</b> database.</p>
+          <p>I used the <a href="http://www.psequel.com">PSquel</a> and <a href="https://postgresapp.com">Postgres.app</a> applications to mainuplate and connect to the Postgres database. </p>
+      </div>
+      
+      <h1>Create a Person</h1><br>
+            <form class ="" method="post" action="/prereg">
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" class="form-control" name="first_name" style="margin-right:9px" placeholder="John"></div>
+                
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" class="form-control" name="last_name" style="margin-right:9px"placeholder="Hero"></div>
+              
+              <div class="form-group">
+                <label for="birth_date">Birth Date</label>
+                <input type="date" id="birth_date" class="form-control" name="birth_date" style="margin-right:9px" placeholder="1900-01-01"></div>
+                
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" class="form-control" name="age" style="margin-right:9px" placeholder="34"></div>
+                
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" class="form-control" name="gender" style="margin-right:9px" placeholder="Male"></div>
+                
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control" name="email" style="margin-right:9px" placeholder="jon@gmail.com"></div>
+                
+              <div class="form-group">
+                <label for="website">Website</label>
+                <input type="text" id="website" class="form-control" name="website" style="margin-right:9px" placeholder="http://john.com"></div>
+                
+              <div class="form-group">
+                <label for="alive">Alive?</label>
+                <input type="checkbox" id= "alive" class="form-control" name="alive" style="margin-right:9px"></div>
+                
+              <div class="form-group">
+                <label for="created">Male</label>
+                <input type="datetime" id="created" class="form-control" name="created_at" style="margin-right:9px" placeholder="2001-09-28 01:00:00"></div>
+              
+                  <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+      <br><br>
+      
+      <h1>Users:</h1><br>
+      {%for user in users%}
+      <h3>{{user.first_name}} {{user.last_name}}</h3>
+        <ul class="list-group similar" style="width:65%; height:auto;" >
+          <li class="list-group-item">Born: {{user.birth_date}}</li>
+          <li class="list-group-item">Age: {{user.age}}</li>
+          <li class="list-group-item">Gender: {{user.gender}}</li>
+          <li class="list-group-item">Email: {{user.email}}</li>
+          <li class="list-group-item">Website: {{user.website}}</li>
+          <li class="list-group-item">Alive: {{user.alive}}</li>
+          <li class="list-group-item">Created: {{user.created_at}}</li>
+          <br>
+      </ul>
+      {%endfor%}
+      
+
+    </main>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
