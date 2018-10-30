@@ -13,6 +13,8 @@ def posts():
         try:
           title = request.form['title']
           content= request.form['content']
+          if content =="":
+            content=fake.text()
           created_at = "2001-09-28 01:00:00"
         except:
           title = fake.first_name()
