@@ -3,13 +3,12 @@ from ..models.User import *
 
 
 @app.route('/')
-def index(): 
+def user_index(): 
   users = User.query.all()
-  return render_template('index.html',users=users)
+  return render_template('users/index.html',users=users)
 
-@app.route('/prereg', methods=['POST'])
-def prereg():
-    #name = None
+@app.route('/user/add', methods=['POST'])
+def users():
     if request.method == 'POST':
         try:
           first_name = request.form['first_name']
@@ -38,5 +37,5 @@ def prereg():
             reg = User(first_name,last_name,birth_date,age,gender,email,website,alive,created_at)
             db.session.add(reg)
             db.session.commit()
-            return render_template('success.html',first_name=first_name)
-    return render_template('index.html')
+            return render_template('users/success.html',first_name=first_name)
+    return render_template('users/index.html')

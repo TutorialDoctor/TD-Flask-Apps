@@ -21,3 +21,5 @@ db = SQLAlchemy(app)
 
 from .controllers.users import *
 from .models.User import User
+from .models.Post import Post
+from .controllers.posts import *
