@@ -27,4 +27,4 @@ class User(db.Model):
         self.created_at = created_at
 
     def __repr__(self):
-        return '<E-mail %r>' % self.first_name
+        return 'Name %r>' % self.first_name

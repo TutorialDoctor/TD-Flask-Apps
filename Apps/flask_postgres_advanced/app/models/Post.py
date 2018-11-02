@@ -15,4 +15,4 @@ class Post(db.Model):
         self.created_at = created_at
 
     def __repr__(self):
-        return '<E-mail %r>' % self.title
+        return '<Title %r>' % self.title

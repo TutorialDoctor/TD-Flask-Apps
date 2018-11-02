@@ -8,7 +8,7 @@ def post_index():
   return render_template('posts/index.html',posts=posts)
 
 @app.route('/post/add', methods=['POST'])
-def posts():
+def create_post():
     if request.method == 'POST':
         try:
           title = request.form['title']
