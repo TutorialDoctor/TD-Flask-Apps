@@ -1,0 +1,14 @@
+<h1>Edit a Post</h1><br>
+            <form class ="" method="post" action="/posts/{{post.id}}/edit">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control" required='true' name="title" style="margin-right:9px" placeholder="John" value="{{post.title}}"></div>
+                
+              <div class="form-group">
+                <label for="content">Content</label>
+                <textarea id="content" rows='5' class="form-control" name="content" style="margin-right:9px"placeholder="Hero" >{{post.content}}</textarea></div>          
+              <br>
+                  <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+      <br><br>
+

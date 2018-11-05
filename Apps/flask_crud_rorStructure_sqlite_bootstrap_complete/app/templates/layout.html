@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Starter Template for Bootstrap</title>
+    <link rel="stylesheet" href="../static/boostrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {padding-top: 5rem;}
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    {%include 'components/main_nav.html'%}
+    <main role="main" class="container">
+      {%block content%}{%endblock%}
+    </main>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../static/jquery-3.3.1.slim.min.js"></script>
+    <script src="../static/popper.min.js"></script>
+    <script src="../static/boostrap.min.css"></script>
+</body>
+</html>

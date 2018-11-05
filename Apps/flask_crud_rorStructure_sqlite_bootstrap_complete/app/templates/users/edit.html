@@ -1,0 +1,62 @@
+{%extends 'layout.html'%}
+
+{%block content%}  
+      <h1>Create a User</h1><br>
+            <form class ="" method="post" action="/user/add">
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" class="form-control" name="first_name" style="margin-right:9px" placeholder="John" value="{{user.first_name}}"></div>
+                
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" class="form-control" name="last_name" style="margin-right:9px"placeholder="Hero" value="{{user.last_name}}"></div>
+              
+              <div class="form-group">
+                <label for="birth_date">Birth Date</label>
+                <input type="date" id="birth_date" class="form-control" name="birth_date" style="margin-right:9px" placeholder="1900-01-01" value="{{user.birth_date}}"></div>
+                
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" class="form-control" name="age" style="margin-right:9px" placeholder="34" value="{{user.age}}"></div>
+                
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" class="form-control" name="gender" style="margin-right:9px" placeholder="Male" value="{{user.gender}}"></div>
+                
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control" name="email" style="margin-right:9px" placeholder="jon@gmail.com" value="{{user.email}}"></div>
+                
+              <div class="form-group">
+                <label for="website">Website</label>
+                <input type="text" id="website" class="form-control" name="website" style="margin-right:9px" placeholder="http://john.com" value="{{user.website}}"></div>
+                
+              <div class="form-group">
+                <label for="alive">Alive?</label>
+                <input type="checkbox" id= "alive" class="form-control" name="alive" style="margin-right:9px" value="{{user.alive}}"></div>
+                
+              <div class="form-group">
+                <label for="created">Male</label>
+                <input type="datetime" id="created" class="form-control" name="created_at" style="margin-right:9px" placeholder="2001-09-28 01:00:00" value="{{user.create_at}}"></div>
+              
+                  <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+      <br><br>
+      
+      <h1>Users:</h1><br>
+      {%for user in users%}
+      <h3>{{user.first_name}} {{user.last_name}}</h3>
+        <ul class="list-group similar" style="width:65%; height:auto;" >
+          <li class="list-group-item">Born: {{user.birth_date}}</li>
+          <li class="list-group-item">Age: {{user.age}}</li>
+          <li class="list-group-item">Gender: {{user.gender}}</li>
+          <li class="list-group-item">Email: {{user.email}}</li>
+          <li class="list-group-item">Website: {{user.website}}</li>
+          <li class="list-group-item">Alive: {{user.alive}}</li>
+          <li class="list-group-item">Created: {{user.created_at}}</li>
+          <li class="list-group-item"><a href="users/{{user.id}}">Show</a></li>
+          <li class="list-group-item"><a href="users/{{user.id}}/delete">Delete</a></li>
+          <br>
+      </ul>
+      {%endfor%}
+{%endblock%}
