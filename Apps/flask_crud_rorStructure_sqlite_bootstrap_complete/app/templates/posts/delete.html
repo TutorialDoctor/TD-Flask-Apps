@@ -1,3 +1,14 @@
-Deleted {{post_title}}
-<br>
-<a href="/posts">Return to Posts</a>
+{%extends 'layout.html'%}
+
+{%block content%}
+
+    <main role="main" class="container">
+
+        <div class="starter-template">
+          <h1>Successfully Deleted "{{post_title}}"</h1>
+
+<a class="btn btn-primary" href="/posts">Return to Posts</a>
+        </div>
+
+    </main>
+{%endblock%}

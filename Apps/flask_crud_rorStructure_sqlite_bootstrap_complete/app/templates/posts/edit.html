@@ -1,3 +1,6 @@
+{%extends 'layout.html'}
+
+{%block content%}
 <h1>Edit a Post</h1><br>
             <form class ="" method="post" action="/posts/{{post.id}}/edit">
               <div class="form-group">
@@ -12,3 +15,4 @@
             </form>
       <br><br>
 
+{%endblock%}
