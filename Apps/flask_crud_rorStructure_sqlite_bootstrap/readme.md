@@ -44,6 +44,9 @@ New controllers and models should be imported at the bottom of the `setup.py` fi
 - If the import module in the top dir, use e.g: from .. import core
 - If the import module in the other subdir, use e.g: from ..other import core</pre>
 
+## Other Software Used
+
+I use [DB Browser](https://sqlitebrowser.org) for the mac to manage the sqlite database directly 
 
 
 
