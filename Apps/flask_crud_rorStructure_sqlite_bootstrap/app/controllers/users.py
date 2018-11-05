@@ -8,7 +8,7 @@ def user_index():
   return render_template('users/index.html',users=users)
 
 @app.route('/user/add', methods=['POST'])
-def users():
+def create_user():
     if request.method == 'POST':
         try:
           first_name = request.form['first_name']
