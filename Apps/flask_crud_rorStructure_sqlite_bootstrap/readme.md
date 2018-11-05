@@ -1,6 +1,6 @@
 This is a flask Crud app with a folder structure similar to Ruby on Rails using an sqlite database with a native bootstrap css library (you don't need to be connected to the internet to see the styling).
 
-![](https://github.com/TutorialDoctor/TD-Flask-Apps/blob/master/Apps/flask_postgres/screen.png)
+![](https://github.com/TutorialDoctor/TD-Flask-Apps/blob/master/Apps/flask_crud_rorStructure_sqlite_bootstrap/app/assets/screen.png)
 
 **Controller** - Plural lowercase
 
