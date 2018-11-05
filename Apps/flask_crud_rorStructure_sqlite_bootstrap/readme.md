@@ -28,7 +28,7 @@ New controllers and models should be imported at the bottom of the `setup.py` fi
 
 1. Copy and edit corresponding model, controller and view files for any new objects.
 2. Create the database with `db.create_all()`
-3. Import the models and views at the bottom of the `setup.py` file.
+3. Import the models and controllers at the bottom of the `setup.py` file.
 
 ## Included Items
 
