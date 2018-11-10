@@ -11,6 +11,7 @@ This project demonstrates a good understanding of:
 - UI Design
 - Web App Development
 - HTML & CSS
+- Gitflow
 
 
 ![](https://github.com/TutorialDoctor/TD-Flask-Apps/blob/master/Apps/flask_crud_rorStructure_sqlite_bootstrap/app/assets/screen.png)
