@@ -47,5 +47,6 @@ New controllers and models should be imported at the bottom of the `setup.py` fi
 
 I use [DB Browser](https://sqlitebrowser.org) for the mac to manage the sqlite database directly 
 
+https://www.techiediaries.com/sqlite-create-table-foreign-key-relationships/
 
 

@@ -8,6 +8,7 @@ class Post(db.Model):
     title = db.Column(db.String(120), nullable=False)
     content = db.Column(db.VARCHAR(255))
     created_at = db.Column(db.TIMESTAMP)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
     def __init__(self, title,content,created_at):
         self.title = title

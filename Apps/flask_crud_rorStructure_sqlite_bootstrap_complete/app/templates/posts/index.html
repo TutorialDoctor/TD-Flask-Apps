@@ -22,6 +22,7 @@
           <li class="list-group-item">Title: {{post.title}}</li>
           <li class="list-group-item">Content: {{post.content}}</li>
           <li class="list-group-item">Created: {{post.created_at}}</li>
+          <li class="list-group-item">User: {{post.user.first_name}} {{post.user.last_name}}</li>
           <li class="list-group-item"><a href="posts/{{post.id}}">Show</a></li>
           <li class="list-group-item"><a href="posts/{{post.id}}/edit">Edit</a></li>
           <li class="list-group-item"><a href="posts/{{post.id}}/delete">Delete</a></li>

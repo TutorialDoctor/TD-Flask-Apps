@@ -1,8 +1,10 @@
 CREATE TABLE posts(
-  id integer PRIMARY KEY,
+  id INTEGER PRIMARY KEY,
   title VARCHAR(255)  NOT NULL,
   content VARCHAR(255)  NOT NULL,
-  created_at TIMESTAMP 
+  created_at TIMESTAMP,
+  user_id INTEGER
+  FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
 

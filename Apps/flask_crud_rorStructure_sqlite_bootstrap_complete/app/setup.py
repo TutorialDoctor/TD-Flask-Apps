@@ -16,7 +16,7 @@ POSTGRES = {
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
 #%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user_posts.db'
 db = SQLAlchemy(app)
 #db.create_all()
 

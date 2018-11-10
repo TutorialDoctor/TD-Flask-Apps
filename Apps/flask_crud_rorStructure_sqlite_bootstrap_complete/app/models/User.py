@@ -14,6 +14,7 @@ class User(db.Model):
     website = db.Column(db.VARCHAR(255))
     alive = db.Column(db.VARCHAR(6))
     created_at = db.Column(db.TIMESTAMP)
+    posts = db.relationship('Post', backref='user')
 
     def __init__(self, first_name,last_name,birth_date,age,gender,email,website,alive,created_at):
         self.first_name = first_name
