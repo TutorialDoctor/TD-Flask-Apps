@@ -2,7 +2,7 @@ This is a flask Crud app with a folder structure similar to Ruby on Rails using 
 
 I created this application as the basis for a full social media app with flask to test my skills and understanding of webapp development. I also created this app to be a good transitional project to Ruby on Rails.
 
-This project demonstrated a good understanding of:
+This project demonstrates a good understanding of:
 
 - Python
 - SQL database design
