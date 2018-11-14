@@ -2,7 +2,7 @@ from app.setup import app,db,render_template,request,random,fake
 from ..models.User import *
 from datetime import datetime
 
-@app.route('/')
+@app.route('/users')
 def user_index(): 
   users = User.query.all()
   return render_template('users/index.html',users=users)
