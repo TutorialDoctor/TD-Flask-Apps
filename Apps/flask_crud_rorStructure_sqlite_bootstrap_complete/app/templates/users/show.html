@@ -1,15 +1,8 @@
-{%extends 'layout.html'%}
-{%block content%}
+{%extends 'layout.html'%} {%block content%}
 <h1>Show User</h1>
-{{user.first_name}}{{user.last_name}}
-<br>
-{{user.birth_date}}
-<br>
-{{user.gender}}{{user.email}}
-<br>
-{{user.website}}
-<br>
-{{user.created_at}}
-<br><br>
-{%endblock%}
-<a class="btn btn-primary" href="/">Return to Users</a>
+{{ user.first_name }}{{ user.last_name }} <br />
+{{ user.birth_date }} <br />
+{{ user.gender }}{{ user.email }} <br />
+{{ user.website }} <br />
+{{ user.created_at }} <br /><br />
+{%endblock%} <a class="btn btn-primary" href="/users">Return to Users</a>

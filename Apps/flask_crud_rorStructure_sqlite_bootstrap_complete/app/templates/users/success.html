@@ -1,13 +1,9 @@
-{%extends 'layout.html'%}
+{%extends 'layout.html'%} {%block content%}
+<main role="main" class="container">
+  <div class="starter-template">
+    <h1>Successfully Submitted "{{ first_name }}"</h1>
 
-{%block content%}
-    <main role="main" class="container">
-
-        <div class="starter-template">
-          <h1>Successfully Submitted "{{first_name}}"</h1>
-
-<a class="btn btn-primary" href="/">New Person</a>
-        </div>
-
-    </main>
+    <a class="btn btn-primary" href="/users">New Person</a>
+  </div>
+</main>
 {%endblock%}
