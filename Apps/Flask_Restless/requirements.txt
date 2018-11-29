@@ -1,0 +1,8 @@
+Flask==1.0.2
+Flask-Cache==0.12
+Flask-Login==0.2.10
+Flask-Script==0.6.7
+Flask-SQLAlchemy==1.0
+Flask-WTF==0.9.4
+SQLAlchemy==1.2.
+Flask-Restless==0.17.0
