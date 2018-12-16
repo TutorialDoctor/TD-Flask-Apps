@@ -1,0 +1,1 @@
+Testing a basic flask app with react frontend. frontend code contained in a single file for educational purposes.
