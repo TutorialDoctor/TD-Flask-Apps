@@ -2,7 +2,7 @@ from app import app,request
 
 
 @app.route('/people',methods=["get","post"])
-def people():
+def People():
     if request.method == "GET":
         return "people"
     if request.method == 'POST':
