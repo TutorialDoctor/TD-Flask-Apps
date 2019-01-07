@@ -8,9 +8,9 @@ def index():
     return "Hello Application"
 
 @app.route('/controllers') #go here
-def people():
-  #GET DATA FROM API USING TOKEN!
-  headers = {'Content-Type': 'application/json'}
+def controllers():
+  api_token = ""
+  headers = {'Content-Type': 'application/json','Authorization': 'Bearer {0}'.format(api_token)}
   r = requests.get('http://localhost:5000/api/v1/controller1', headers=headers)
   data = r.json() # THIS WORKS!
   return jsonify(data)
